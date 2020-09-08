@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Site information -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Asaf Consignado - Crédito Consignado</title>
+        <meta name="description" content="A Bootstrap 3 Full and Final HTML Template for music band, dj, music agency or any kind of website related to music industry">
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/owl.transitions.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/apps.css">
+        <link rel="stylesheet" href="assets/css/plyr.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/icon-114x114.png">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="assets/js/html5shiv.min.js"></script>
+            <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="page">
+
+        <header id="top" class="top-header">
+            <!-- Navigation -->
+            <nav class="navbar navbar-default navbar-expand-lg" data-spy="affix" data-offset-top="400">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="Site Logo">
+                    </a>
+                    <p class="slogan">Porque Sonhos não se aposentam</p>
+                    <button class="navbar-toggler navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#">Sobre</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="sobre.html">Quem Somos</a></li>
+                                    <li><a href="index.html#produtos">Nossos Produtos</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#">Empréstimo</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Minha Proposta</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://api.whatsapp.com/send?phone=5511950327077&text=Oi,%20quero%20saber%20o%20andamento%20da%20minha%20proposta" target="_blank">Acompanhar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="atendimento.html">Atendimento</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navigation End -->
+        </header>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container text-center">
+                <nav aria-label="breadcrumb">
+                <ol class="breadcrumb text-center">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Empréstimo</li>
+                </ol>
+                </nav>
+                <h1 class="page-title">Simule seu empréstimo</h1>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <div class="main-wrap">
+
+            <!-- Contact form and map -->
+            <div class="section simulation-form">
+                <div class="container">
+                    <div class="simulation-form-wrap text-black">
+                        <div class="overlay-black">
+                            <div class="section-header">
+                                <h3 class="section-title">Simule seu crédito</h3>
+                                <p class="section-subtext">Não se preocupe, essa simulação não tem nenhum valor contratual</p>
+                            </div>
+                            <form id="contactForm" class="contact-form" action="./sendmail.php" method="post" autocomplete="off">                                
+                                <h4>Quanto voce precisa?</h4>
+                                <div class="options">
+                                    <div class="option">
+                                        <input id="valor1" type="radio" name="valor" value="5k"/> 
+                                        <label tabindex="1" for="valor1">R$ 5.000</label>
+                                    </div>
+                                    <div class="option">
+                                        <input id="valor2" type="radio" name="valor" value="10k" onclick="hide()" />
+                                        <label tabindex="2" for="valor2">R$ 10.000</label> 
+                                    </div>
+                                    <div class="option">
+                                        <input id="valor3" type="radio" name="valor" value="20k" onclick="hide()" />
+                                        <label tabindex="3" for="valor3">R$ 20.000</label>
+                                    </div>
+                                    <div class="option">
+                                        <input id="valor4" type="radio" name="valor" value="30k" onclick="hide()" />
+                                        <label tabindex="4" for="valor4">R$ 30.000</label> 
+                                    </div>
+                                    <div class="option">
+                                        <input id="valor5" type="radio" name="valor" value="50k" onclick="hide()" /> 
+                                        <label tabindex="5" for="valor5">R$ 50.000</label>
+                                    </div>
+                                    <div class="option">
+                                        <input id="valor6" type="radio" name="valor" value="outro" onclick="show()" /> 
+                                        <label tabindex="6" for="valor6">Outro valor</label>
+                                    </div>
+                                </div>
+                                <div id="optionsb" class="optionsb" style="display: none;">
+                                    <div class="optionb">
+                                        <label>Digite o Valor Desejado</label>
+                                        <input id="outroValor" class="digitarValor" type="text" name="valorb" value="" placeholder="R$" onKeyPress="return(moeda(this,'.',',',event))"/>
+                                    </div>
+                                </div>
+
+                                <h4>Em quantas parcelas?</h4>
+
+                                <div class="options">
+                                    <div class="option">
+                                        <input id="parcela48" type="radio" name="parcelas" value="48x"> 
+                                        <label tabindex="1" for="parcela48">48x</label>
+                                    </div>
+                                    <div class="option">
+                                        <input id="parcela60" type="radio" name="parcelas" value="60x"> 
+                                        <label tabindex="2" for="parcela60">60x</label>
+                                    </div>
+                                    <div class="option">
+                                        <input id="parcela72" type="radio" name="parcelas" value="72x"> 
+                                        <label tabindex="3" for="parcela72">72x</label>
+                                    </div>
+                                    <div class="option">
+                                        <input id="parcela84" type="radio" name="parcelas" value="84x">
+                                        <label tabindex="4" for="parcela84">84x</label>
+                                    </div>  
+                                </div>
+
+                                <h4>Informe seus dados para saber os valores</h4>
+                                <p>
+                                    <input type="text" name="name" id="name" placeholder="Nome Completo" required>
+                                </p>
+                                <p>
+                                    <input type="text" name="cpf" id="cpf" placeholder="CPF" onkeydown="mascara(this, '###.###.###-##')" minlength="14" maxlength="14" required>
+                                </p>                                
+                                <p>
+                                    <input type="text" name="telefone" id="telefone" placeholder="Telefone" onkeydown="mascaraT(this)" size="20" minlength="14" maxlength="14">
+                                </p>
+                                <p>
+                                    <input type="text" name="celular" id="celular" placeholder="Celular" onkeydown="mascaraT(this)" size="20" minlength="15" maxlength="15" required>
+                                </p>
+                                <p>
+                                    <input type="email" name="email" id="email" placeholder="Email" required>
+                                </p>
+                                <p>
+                                    <button type="submit" class="btn btn-black" name="enviarSimulacao">Simular</button>
+                                </p>
+                                <p class="input-success">Um dos nossos consultores entrara em contato e passara os valores da simulação.</p>
+                                <p class="input-error">Desculpe, não foi possivél fazer sua simulação.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+    
+            <!-- Footer logo and social media button -->
+
+            <!-- Footer Subscribe -->
+            <div class="subscription-area section-padding theme-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="section-header left-style">
+                                <h3 class="section-title">Realizar um sonho pode ser mais simples do que você pensa</h3>
+                                <p></p>
+                                <div class="button-group">
+                                    <a class="btn btn-border btn-white" href="simulacao.html">Simular</a>
+                                    <a class="btn btn-simple btn-white" href="https://api.whatsapp.com/send?phone=5511950327077" target="_blank"><i class="fa fa-whatsapp"></i> Tenho dúvidas</a>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/blog/1.jpg" alt="First slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Dar uma força para os parentes</h5>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/blog/2.jpg" alt="Second slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Quitar dívidas</h5>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/blog/3.jpg" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Reformar ou decorar uma casa</h5>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/blog/4.jpg" alt="Third slide">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Dar uma força para os parentes</h5>
+                                    </div>
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="logo-social-area section-padding text-white">
+                <div class="container text-center">
+                    <a class="logo logo-footer" href="index.html">
+                        <img src="images/logo-footer.png" alt="Site Logo">
+                    </a>
+                    <div class="footer-contact">
+                        <p class="phone"><i class="fa fa-phone"></i> (11) 3164-6071</p>
+                        <p class="phone"><i class="fa fa-whatsapp"></i> (11) 95032-7077</p>
+                    </br>
+                        <p class="email"><i class="fa fa-envelope-o"></i> contato@asafconsigbrasil.com.br</p> 
+                    </br>
+                        <p class="clock"><i class="fa fa-clock-o"></i> 2ª a 6ª feira, das 9h às 19h, exceto feriados</p>                       
+                    </div>
+                    <!-- <div class="socials">
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5511950327077" target="_blank"><i class="fa fa-whatsapp"> (11) 95032-7077</i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-vimeo"></i></a>
+                    </div> -->
+                </div>
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=5511950327077" 
+                        target="_blank">
+                        <img  class="whatsapp" src="https://images.tcdn.com.br/static_inst/integracao/imagens/whatsapp.png" />
+                    </a>
+                </div>
+            </div>
+            <!-- Footer -->
+    
+            <!-- Footer copyrgiht and navigation -->
+            <div class="copyright-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <p class="copyright">Copyright &copy; 2020, <a href="#">Asaf Consignado</a>. Todos os direitos reservados</p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <!-- <p class="credit-text">Criado por <a href="#"></a></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer copyrgiht and navigation -->
+        </footer>
+
+        <!-- Script -->
+        <script>
+            function mascara(t, mask){
+              var i = t.value.length;
+              var saida = mask.substring(1,0);
+              var texto = mask.substring(i)
+              if (texto.substring(0,1) != saida){
+                t.value += texto.substring(0,1);
+              }
+            }
+            function mascaraT(telefone){ 
+            if(telefone.value.length == 0)
+                telefone.value = '(' + telefone.value; //quando começamos a digitar, o script irá inserir um parênteses no começo do campo.
+            if(telefone.value.length == 3)
+                telefone.value = telefone.value + ') '; //quando o campo já tiver 3 caracteres (um parênteses e 2 números) o script irá inserir mais um parênteses, fechando assim o código de área.
+ 
+            if(telefone.value.length == 10)
+                telefone.value = telefone.value + '-'; //quando o campo já tiver 8 caracteres, o script irá inserir um tracinho, para melhor visualização do telefone.
+  
+            }
+
+            function show() {
+                document.getElementById('optionsb').style.display ='block';
+            }
+            function hide() {
+                document.getElementById('optionsb').style.display ='none';
+            }
+
+            function moeda(a, e, r, t) {
+            let n = ""
+            , h = j = 0
+            , u = tamanho2 = 0
+            , l = ajd2 = ""
+            , o = window.Event ? t.which : t.keyCode;
+            if (13 == o || 8 == o)
+                return !0;
+            if (n = String.fromCharCode(o),
+            -1 == "0123456789".indexOf(n))
+                return !1;
+            for (u = a.value.length,
+            h = 0; h < u && ("0" == a.value.charAt(h) || a.value.charAt(h) == r); h++)
+                ;
+            for (l = ""; h < u; h++)
+                -1 != "0123456789".indexOf(a.value.charAt(h)) && (l += a.value.charAt(h));
+            if (l += n,
+            0 == (u = l.length) && (a.value = ""),
+            1 == u && (a.value = "0" + r + "0" + l),
+            2 == u && (a.value = "0" + r + l),
+            u > 2) {
+                for (ajd2 = "",
+                j = 0,
+                h = u - 3; h >= 0; h--)
+                    3 == j && (ajd2 += e,
+                    j = 0),
+                    ajd2 += l.charAt(h),
+                    j++;
+                for (a.value = "",
+                tamanho2 = ajd2.length,
+                h = tamanho2 - 1; h >= 0; h--)
+                    a.value += ajd2.charAt(h);
+                a.value += r + l.substr(u - 2, u)
+            }
+            return !1
+            }
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/plyr.js"></script>
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/jquery.countdown.min.js"></script>
+        <script src="assets/js/tether.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/amplitude.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
+        <script src="js/map.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+
+</html>
